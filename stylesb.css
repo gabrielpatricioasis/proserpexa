@@ -437,9 +437,9 @@ small{
 		display: none;
 	}
 
-		.agrandar{
+		/*.agrandar{
 		margin-top: 7vh;
-	}
+	}*/
 
 
 	/*.pink .last{
@@ -515,9 +515,19 @@ small{
 	margin: 8px;
 	}
 
+	.agrandar{
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+
 	/*.pinkk .voices .smaller .card{
 		width: 18rem;
 	}*/
+
+	.atencion{
+	margin-top: 3rem!important;
+	}
+	
 }
 
 a{
@@ -644,3 +654,4 @@ background: linear-gradient(90deg, rgba(185,246,228,1) 0%, rgba(207,197,212,1) 5
 .agrandar{
 	filter: drop-shadow(0.1rem 0.1rem 0.15rem #5e5554);
 }
+
