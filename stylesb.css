@@ -144,8 +144,8 @@ input{
 .voices{
 	/*background-color: grey;*/
 	color: black;
-	padding: 10px;
-	margin: 20px;
+	/*padding: 10px;
+	margin: 20px;*/
 	font-size: .98rem;
 	text-align: justify;
 	hyphens: auto;
