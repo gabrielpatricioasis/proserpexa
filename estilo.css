@@ -403,6 +403,10 @@ small{
 		margin: auto 1rem auto 1rem;
 	}
 
+	.pink img{
+		width: inherit;
+	}
+
 	.voices{
 	/*background-color: grey;*/
 	color: black;
@@ -468,7 +472,7 @@ small{
 	}*/
 
 	.pink img{
-	height: 55vh;
+	height: 60vh;
 	}
 
 	.slider{
