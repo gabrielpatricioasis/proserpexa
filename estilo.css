@@ -584,6 +584,7 @@ button:focus{
 	overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
+  width: auto;
 	/*margin: auto 6rem auto 6rem;*/
 }
 
