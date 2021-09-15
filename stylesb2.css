@@ -659,3 +659,9 @@ background: linear-gradient(90deg, rgba(185,246,228,1) 0%, rgba(207,197,212,1) 5
 	filter: drop-shadow(0.1rem 0.1rem 0.15rem #5e5554);
 }
 
+@media (max-width: 1280px){
+	h1{
+	font-size: 1.4rem;
+}
+}
+
