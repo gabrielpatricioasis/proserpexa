@@ -477,7 +477,7 @@ small{
 	}
 
 	.agrandar .card{
-		width: 12rem!important;
+		width: 11rem!important;
 	}
 
 	/*.pinkk .voices .smaller .card{
@@ -516,8 +516,8 @@ small{
 	}
 
 	.agrandar{
-		margin-top: 2rem;
-		margin-bottom: 2rem;
+		margin-top: 3rem;
+		margin-bottom: 3rem;
 	}
 
 	/*.pinkk .voices .smaller .card{
