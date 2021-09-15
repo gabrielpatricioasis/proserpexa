@@ -27,6 +27,9 @@ body{
 	/*font-family: 'Catamaran', sans-serif;*/
 }
 
+h1{
+	font-size: 2rem;
+}
 
 /*CONTACTO*/
 
@@ -75,11 +78,11 @@ body{
 
 }
 
-.mail h3 a{
+.mailcito{
 	color: #8457ff;
 }
 
-.mail h3 a:hover{
+.mailcito:hover{
 	color: #785a59;
 }
 

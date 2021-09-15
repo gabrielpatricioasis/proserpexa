@@ -24,6 +24,10 @@ body{
 	
 }
 
+h1{
+	font-size: 2rem;
+}
+
 .libros{
 	/*font-family: 'Catamaran', sans-serif;*/
 }

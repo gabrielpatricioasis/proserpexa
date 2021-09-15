@@ -23,14 +23,13 @@ body{
 	
 }
 
-h1{
-	font-size: 2rem;
-}
-
 .libros{
 	/*font-family: 'Catamaran', sans-serif;*/
 }
 
+h1{
+	font-size: 2rem;
+}
 
 /*CONTACTO*/
 
@@ -79,11 +78,11 @@ h1{
 
 }
 
-.mail h3 a{
+.mailcito{
 	color: #8457ff;
 }
 
-.mail h3 a:hover{
+.mailcito:hover{
 	color: #785a59;
 }
 
@@ -230,7 +229,6 @@ a{
 }
 
 .overlay{
-	white-space: normal;
 	position: absolute;
 	overflow-y: auto;
 	top: 0;
@@ -287,7 +285,7 @@ small{
 #menu{
 	height: 100vh;
 	display: flex;
-	background-color: white;
+	background-color: black;
 	flex-direction: column;
 	justify-content: space-around;
 	animation-name: invert;
@@ -366,10 +364,6 @@ small{
 		
 		height: 100vh;
 	}
-
-	.cata{
-		margin-bottom: 15px;
-		}
 }
 
 @media (min-width: 768px) and (max-width: 1280px){
@@ -401,14 +395,8 @@ small{
 	margin: 10px auto 15px auto;
 	}
 
-	
-
-	.slider{
-		margin: auto 1rem auto 1rem;
-	}
-
 	.pink img{
-		width: inherit;
+		height: 46vh;
 	}
 
 	.voices{
@@ -471,16 +459,12 @@ small{
 		font-size: 1.6rem;
 	}
 
-	/*.contenedor-portada{
+	.contenedor-portada{
 	margin: 50px auto 60px auto;
-	}*/
-
-	.pink img{
-	height: 65vh;
 	}
 
-	.slider{
-		margin: auto 1rem auto 1rem;
+	.pink img{
+	height: 80vh;
 	}
 }
 
@@ -501,21 +485,17 @@ small{
 		font-size: 0.95rem;
 	}
 
-	/*.contenedor-portada{
+	.contenedor-portada{
 	margin: 60px auto 55px auto;
-	}*/
+	}
 
 	.pink img{
-	height: 55vh;
+	height: 86vh;
 	}
 
 	.redes img{
 	width: 4%;
 	margin: 8px;
-	}
-
-	.slider{
-		margin: auto 6rem auto 6rem;
 	}
 }
 
@@ -539,14 +519,14 @@ button:focus{
 }
 
 .nav .nav-link{
-	color: black;
+	color: white;
 	margin: auto;
 	transform: scale(1.1);
 	white-space: nowrap;
 }
 
 .nav .nav-link:hover{
-	color: #258568;
+	color: #bf8041;
 	transform: scale(1.2);
 }
 
@@ -568,32 +548,14 @@ button:focus{
 	background-size: cover;*/
 	/*background-color: #c1c4bc;*/
 	 background: rgb(185,246,228);
-	background: linear-gradient(90deg, rgba(185,246,228,1) 0%, rgba(207,197,212,1) 54%, rgba(245,249,228,1) 100%);   
-	padding: auto 10px auto 10px;
-		display: flex;
-		flex-direction: column;
-	justify-content: center;
+background: linear-gradient(90deg, rgba(185,246,228,1) 0%, rgba(207,197,212,1) 54%, rgba(245,249,228,1) 100%);   
+	display: flex;
+	flex-flow: row wrap; 
+	/*justify-content: space-around;*/
+	justify-content: space-around;
 	align-items: center;
-	
-	
-}
-
-.slidercontainer{
-
-
-
-}
-
-.slider{
-	overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-  width: auto;
-	/*margin: auto 6rem auto 6rem;*/
-}
-
-.slidec{
-	display: inline-block;
+	padding: auto 10px auto 10px;
+	overflow-y: auto;
 }
 
 .pink .textshadowwhite{

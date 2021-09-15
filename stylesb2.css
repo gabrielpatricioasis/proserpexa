@@ -15,6 +15,7 @@ body{
 	/*font-family: 'Heebo', sans-serif;*/
 	background-color: none;
 	font-family: 'Catamaran', sans-serif;
+	/*background-color: black;*/
 	animation-name: color;
 	animation-duration: .5s;
 	animation-iteration-count: 1;
@@ -36,17 +37,16 @@ h1{
 
 .form{
 	/*background-color: #f2e24e;*/
-	background-image: url(img/defocusedd.jpg);
-	background-size: cover;
-	color: black;
-	text-shadow: 1.2px 1.2px white;
+	background-image: url(img/form.jpg);
+	background-size: auto;
+	color: white;
+	text-shadow: 1.2px 1.2px black;
 	margin: 10px;
 	width: auto;
 	padding: 10px;
 	text-align: center;
-	/*border: solid white 5px;*/
-	border-radius: 5px;
-	filter: drop-shadow(0.1rem 0.1rem 0.15rem #5e5554);
+	border: solid white 5px;
+	border-radius: 10px;
 }
 
 .form button{
@@ -65,26 +65,26 @@ h1{
 }
 
 .mail h2{
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 	text-shadow: 1.2px 1.2px white;
 }
 
 .mail h3{
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 	text-shadow: 1.2px 1.2px black;
 	padding: 5px;
-	/*border: solid white 2px;
+	border: solid white 2px;
 	border-radius: 10px;
-	background-color: white;*/
+	background-color: white;
 
 }
 
 .mail h3 a{
-	color: #8457ff;
+	color: red;
 }
 
 .mail h3 a:hover{
-	color: #785a59;
+	color: blue;
 }
 
 
@@ -124,17 +124,19 @@ input{
 
 .about{
 	/*background-color: #daa6ff;*/
-	background-image: url(img/forest.jpg);
-	color: white;
-	text-shadow: 1.2px 1.2px black;
+	background-image: url(img/softforest.jpg);
+	filter: drop-shadow(0.1rem 0.1rem 0.15rem #5e5554);
+	background-size: cover;
+	color: black;
+	text-shadow: 1.2px 1.2px white;
 	padding: 10px;
 	margin: 20px;
 	font-size: 1.3rem;
 	text-align: justify;
 	hyphens: auto;
-	border: solid white 5px;
-	border-radius: 10px;
+	border-radius: 5px;
 }
+
 
 .editor{
 	width: 15%;
@@ -146,19 +148,20 @@ input{
 .voices{
 	/*background-color: grey;*/
 	color: black;
-	padding: 10px;
-	margin: 20px;
+	/*padding: 10px;
+	margin: 20px;*/
 	font-size: .98rem;
 	text-align: justify;
 	hyphens: auto;
-	/*width: 100vw;*/
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
 }
 
 .voices .card{
-	filter: drop-shadow(0.1rem 0.1rem 0.15rem #5e5554);
-	border-radius: 5px;
+	margin: 20px;
 }
-
 
 .autor img{
 	width: 28.5%;
@@ -197,9 +200,9 @@ a{
 
 
 /*@keyframes color{
-	0%{background-color: white}
-	50%{background-color: black}
-	100%{background-color: white}
+	0%{background-color: black}
+	50%{background-color: white}
+	100%{background-color: black}
 }
 
 
@@ -221,7 +224,6 @@ a{
 
 .padding{
 	padding: 5px;
-	filter: drop-shadow(0.1rem 0.1rem 0.15rem #5e5554);
 }
 
 .contenedor-portada{
@@ -230,7 +232,6 @@ a{
 }
 
 .overlay{
-	white-space: normal;
 	position: absolute;
 	overflow-y: auto;
 	top: 0;
@@ -240,7 +241,7 @@ a{
   	height: 100%;
   	width: 100%;
 	opacity: 0;
-	background-color: /*#c1e3df*/white;
+	background-color: #c1e3df;
 	padding: 20px;
 }
 
@@ -260,10 +261,6 @@ p{
 .text h3{
 	font-family: 'Monofett', cursive;
 	color: blue;
-}
-
-.text h3:hover{
-	opacity: 0.5;
 }
 
 .text p{
@@ -286,8 +283,8 @@ small{
 
 #menu{
 	height: 100vh;
-	display: flex;
 	background-color: white;
+	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	animation-name: invert;
@@ -306,6 +303,19 @@ small{
 
 
 @media (max-width: 767px){
+
+	.patreon img{
+		transform: scale(1.4);
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.cafe img{
+		transform: scale(1.4);
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
 
 	.redes img{
 	width: 6%;
@@ -336,7 +346,7 @@ small{
 		margin: 25px auto 25px auto;
 	}
 
-	.izq{
+	.nav .nav-link .izq{
 		display: none;
 	}
 
@@ -355,10 +365,15 @@ small{
 	.ardilla{
 
 	}
+
+	.agrandar:hover{
+	transform: scale(.5);
+	transition-duration: 2s;
+}
 }
 
 @media (min-width: 768px){
-	.abj{
+	.nav .nav-link .abj{
 		display: none;
 	}
 
@@ -367,9 +382,8 @@ small{
 		height: 100vh;
 	}
 
-	.cata{
-		margin-bottom: 15px;
-		}
+
+
 }
 
 @media (min-width: 768px) and (max-width: 1280px){
@@ -401,27 +415,9 @@ small{
 	margin: 10px auto 15px auto;
 	}
 
-	
-
-	.slider{
-		margin: auto 1rem auto 1rem;
-	}
-
 	.pink img{
-		width: inherit;
+		height: 46vh;
 	}
-
-	.voices{
-	/*background-color: grey;*/
-	color: black;
-	padding: 5px;
-	margin: 10px;
-	font-size: .98rem;
-	text-align: justify;
-	hyphens: auto;
-	/*width: 100vw;*/
-
-}
 }
 
 /*@media (min-width: 768px) and (max-width: 1280px){
@@ -440,17 +436,22 @@ small{
 
 
 
-@media (min-width: 1280px){
+@media (min-width: 1260px){
 	.nav .nav-link br{
 		display: none;
 	}
+
+		/*.agrandar{
+		margin-top: 7vh;
+	}*/
+
 
 	/*.pink .last{
 		margin-bottom: 60px;
 	}*/
 }	
 
-@media (min-width: 1280px) and (max-width: 1620px){
+@media (min-width: 1260px) and (max-width: 1650px){
 	.text h1{
 		font-size: 1.5rem;
 	}
@@ -471,17 +472,21 @@ small{
 		font-size: 1.6rem;
 	}
 
-	/*.contenedor-portada{
+	.contenedor-portada{
 	margin: 50px auto 60px auto;
-	}*/
+	}
 
 	.pink img{
-	height: 65vh;
+	height: 80vh;
 	}
 
-	.slider{
-		margin: auto 1rem auto 1rem;
+	.agrandar .card{
+		width: 11rem!important;
 	}
+
+	/*.pinkk .voices .smaller .card{
+		width: 10rem;
+	}*/
 }
 
 @media (min-width: 1620px){
@@ -501,12 +506,12 @@ small{
 		font-size: 0.95rem;
 	}
 
-	/*.contenedor-portada{
+	.contenedor-portada{
 	margin: 60px auto 55px auto;
-	}*/
+	}
 
 	.pink img{
-	height: 55vh;
+	height: 85vh;
 	}
 
 	.redes img{
@@ -514,21 +519,23 @@ small{
 	margin: 8px;
 	}
 
-	.slider{
-		margin: auto 6rem auto 6rem;
+	.agrandar{
+		margin-top: 3rem;
+		margin-bottom: 3rem;
 	}
+
+	/*.pinkk .voices .smaller .card{
+		width: 18rem;
+	}*/
+
+	.atencion{
+	margin-top: 3rem!important;
+	}
+	
 }
 
 a{
 	outline: none;
-}
-
-button:focus{
-	outline: 0;
-}
-
-.whitebutton:hover{
-	background-color: white;
 }
 
 .nav{
@@ -566,34 +573,14 @@ button:focus{
 	height: 100vh;
 	/*background-image: url(img/defocused.jpg);
 	background-size: cover;*/
-	/*background-color: #c1c4bc;*/
-	 background: rgb(185,246,228);
-	background: linear-gradient(90deg, rgba(185,246,228,1) 0%, rgba(207,197,212,1) 54%, rgba(245,249,228,1) 100%);   
-	padding: auto 10px auto 10px;
-		display: flex;
-		flex-direction: column;
-	justify-content: center;
+	  background: rgb(185,246,228);
+background: linear-gradient(90deg, rgba(185,246,228,1) 0%, rgba(207,197,212,1) 54%, rgba(245,249,228,1) 100%);  
+	display: flex;
+	flex-flow: row wrap; 
+	justify-content: space-around;
 	align-items: center;
-	
-	
-}
-
-.slidercontainer{
-
-
-
-}
-
-.slider{
-	overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-  width: auto;
-	/*margin: auto 6rem auto 6rem;*/
-}
-
-.slidec{
-	display: inline-block;
+	padding: auto 10px auto 10px;
+	overflow-y: auto;
 }
 
 .pink .textshadowwhite{
@@ -612,37 +599,63 @@ button:focus{
 	/*background-image: url(img/defocused.jpg);
 	background-size: cover;*/
 	 background: rgb(185,246,228);
-background: linear-gradient(90deg, rgba(185,246,228,1) 0%, rgba(207,197,212,1) 54%, rgba(245,249,228,1) 100%);   
+background: linear-gradient(90deg, rgba(185,246,228,1) 0%, rgba(207,197,212,1) 54%, rgba(245,249,228,1) 100%); ; 
 	
 	overflow-y: auto;
+	display: flex;
+	flex-flow: row wrap; 
+	justify-content: space-around;
+	align-items: center;
 }
-
-.pinkk .textshadowwhite{
-	text-shadow: 1.2px 1.2px white;
-}
-
-.pinkkk .textshadowwhite{
-	text-shadow: 1.2px 1.2px white;
-}
-
 
 .pinkkk{
 	/*background-color: #dbd7f7*/;
 	height: 100vh;
 	/*background-image: url(img/defocused.jpg);
 	background-size: cover;*/
-
-	  background: rgb(185,246,228);
+	 background: rgb(185,246,228);
 background: linear-gradient(90deg, rgba(185,246,228,1) 0%, rgba(207,197,212,1) 54%, rgba(245,249,228,1) 100%); 
 	
 	overflow-y: auto;
 
 }
 
-.formularios{
+
+.textshadowwhite{
+	text-shadow: 1.2px 1.2px white;
+}
+
+.mp{
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	align-items: ;
+	flex-direction: column;
+	margin: 10px auto 10px auto;
+
+}
+
+.mp .donacion{
+	margin: 10px auto 10px auto;
+	width: 100%;
+}
+
+.paypalform{
+	margin: 10px auto 10px auto;
+}
+
+.cafe{
+	margin: 10px auto 10px auto;
+}
+
+
+
+
+
+.agrandar:hover{
+	transform: scale(1.1);
+	transition-duration: 2s;
+}
+
+
+.agrandar{
+	filter: drop-shadow(0.1rem 0.1rem 0.15rem #5e5554);
 }
 
