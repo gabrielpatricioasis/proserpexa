@@ -370,6 +370,10 @@ small{
 	transform: scale(.5);
 	transition-duration: 2s;
 }
+
+	.about{
+		font-size: 1.12rem;
+	}
 }
 
 @media (min-width: 768px){
