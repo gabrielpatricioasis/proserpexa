@@ -117,6 +117,11 @@ input{
 	width: 7%;
 	margin: 8px;
 }
+.redess img{
+	width: 1.3%;
+	margin: 8px;
+}
+
 
 
 
@@ -196,7 +201,7 @@ a{
 }
 
 
-/*@keyframes color{
+@keyframes color{
 	0%{background-color: white}
 	50%{background-color: black}
 	100%{background-color: white}
@@ -207,7 +212,7 @@ a{
 	0%{filter: none}
 	50%{filter: invert(100%)}
 	100%{filter: none}
-}*/
+}
 
 .ardilla{
 	/*margin-top: 3px;
@@ -291,7 +296,7 @@ small{
 	flex-direction: column;
 	justify-content: space-around;
 	animation-name: invert;
-	animation-duration: .5s;
+	animation-duration: 2s;
 	animation-iteration-count: 1;
 	animation-delay: .005s;
 
@@ -309,6 +314,10 @@ small{
 
 	.redes img{
 	width: 6%;
+	}
+	.redess img{
+	width: 6%;
+	margin: 8px;
 	}
 
 	.text h1{
@@ -422,6 +431,16 @@ small{
 	/*width: 100vw;*/
 
 }
+
+.redes img{
+	width: 4%;
+	margin: 8px;
+}
+.redess img{
+	width: 2.5%;
+	margin: 8px;
+}
+
 }
 
 /*@media (min-width: 768px) and (max-width: 1280px){
@@ -518,6 +537,10 @@ small{
 	width: 4%;
 	margin: 8px;
 	}
+	.redess img{
+	width: 1.2%;
+	margin: 8px;
+	}
 
 	.slider{
 		margin: auto 6rem auto 6rem;
@@ -571,9 +594,7 @@ button:focus{
 	height: 100vh;
 	/*background-image: url(img/defocused.jpg);
 	background-size: cover;*/
-	/*background-color: #c1c4bc;*/
-	 background: rgb(185,246,228);
-	background: linear-gradient(90deg, rgba(185,246,228,1) 0%, rgba(207,197,212,1) 54%, rgba(245,249,228,1) 100%);   
+	background-color: lightgrey;  
 	padding: auto 10px auto 10px;
 		display: flex;
 		flex-direction: column;
@@ -591,9 +612,9 @@ button:focus{
 
 .slider{
 	overflow-x: scroll;
-  overflow-y: hidden;
+ 	/*overflow-y: hidden;*/
   white-space: nowrap;
-  width: auto;
+ /* width: auto;*/
 	/*margin: auto 6rem auto 6rem;*/
 }
 

@@ -137,6 +137,75 @@ input{
 	border-radius: 5px;
 }
 
+.blog{
+	background-color: white;
+	/*background-image: url(img/softforest.jpg);*/
+	filter: drop-shadow(0.1rem 0.1rem 0.15rem #5e5554);
+	background-size: cover;
+	color: black;
+	text-shadow: 1.2px 1.2px white;
+	padding: 10px;
+	margin: 20px;
+	font-size: 1.1rem;
+	text-align: justify;
+	hyphens: auto;
+	border-radius: 5px;
+} 
+
+.blog .imagenblog{
+	width: 45vw; 
+	height: auto;
+	display: block;
+	margin: auto;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.blog button{
+	font-size: 1.15rem;
+}
+
+.bloglist{
+	/*padding: 0;
+  margin-left: 0;
+	list-style: none;*/
+	margin-bottom: 0;
+}
+/*
+.bloglist li{
+  padding-left: 1.2rem;
+  text-indent: -1.5rem;
+}
+
+.bloglist .li1::before{
+	content: "🟢 ";
+}
+.bloglist .li2::before{
+	content: "👤 ";
+}
+.bloglist .li3::before{
+	content: "🔶 ";
+}
+.bloglist .li3new::before{
+	content: "🆕 ";
+}*/
+
+.bloglist .li3new{
+	list-style-image: url(img/new.png);
+}
+.bloglist .li1{
+	list-style-image: url(img/green.png);
+}
+.bloglist .li2{
+	list-style-image: url(img/bust.png);
+}
+.bloglist .li3{
+	list-style-image: url(img/orange.png);
+}
+
+.bloglist .artby{
+	list-style-image: url(img/art.png);
+}
 
 .editor{
 	width: 15%;
@@ -374,6 +443,15 @@ small{
 	.about{
 		font-size: 1.12rem;
 	}
+
+	.blog .imagenblog{
+	width: 65vw; 
+	height: auto;
+	display: block;
+	margin: auto;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
 }
 
 @media (min-width: 768px){
@@ -422,6 +500,21 @@ small{
 	.pink img{
 		height: 46vh;
 	}
+
+.redes img{
+	width: 4%;
+	margin: 8px;
+}
+
+.blog .imagenblog{
+	width: 60vw; 
+	height: auto;
+	display: block;
+	margin: auto;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
 }
 
 /*@media (min-width: 768px) and (max-width: 1280px){
@@ -577,8 +670,9 @@ a{
 	height: 100vh;
 	/*background-image: url(img/defocused.jpg);
 	background-size: cover;*/
-	  background: rgb(185,246,228);
-background: linear-gradient(90deg, rgba(185,246,228,1) 0%, rgba(207,197,212,1) 54%, rgba(245,249,228,1) 100%);  
+	  /*background: rgb(185,246,228);
+background: linear-gradient(90deg, rgba(185,246,228,1) 0%, rgba(207,197,212,1) 54%, rgba(245,249,228,1) 100%); */
+background-color: lightgrey; 
 	display: flex;
 	flex-flow: row wrap; 
 	justify-content: space-around;
@@ -667,4 +761,29 @@ background: linear-gradient(90deg, rgba(185,246,228,1) 0%, rgba(207,197,212,1) 5
 	h1{
 	font-size: 1.4rem;
 }
+}
+
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+
+/*#mi-post:target{
+	animation-name: post;
+	animation-duration: 3s;
+
+}
+
+@keyframes post{
+  0% {background-color: #e2ff9e}
+  100% {background-color: grey}
+}*/
+
+/*TARGETS MIAMOR*/
+
+#mi-post:target{
+	background-color: #f2fca4;
 }
