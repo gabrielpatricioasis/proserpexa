@@ -452,6 +452,12 @@ small{
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 }
+
+#copyclipboard{
+	display: none;
+}
+
+
 }
 
 @media (min-width: 768px){
