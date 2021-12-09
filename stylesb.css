@@ -144,8 +144,8 @@ input{
 	background-size: cover;
 	color: black;
 	text-shadow: 1.2px 1.2px white;
-	padding: 10px;
-	margin: 20px;
+	/*padding: 10px;
+	margin: 20px;*/
 	font-size: 1.1rem;
 	text-align: justify;
 	hyphens: auto;
@@ -469,6 +469,11 @@ small{
 		
 		height: 100vh;
 	}
+
+	.blog{
+	padding: 10px;
+	margin: 20px;
+}
 
 
 
