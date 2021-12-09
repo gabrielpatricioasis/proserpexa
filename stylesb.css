@@ -457,6 +457,11 @@ small{
 	display: none;
 }
 
+.blog{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
 
 }
 
@@ -472,7 +477,7 @@ small{
 
 	.blog{
 	padding: 10px;
-	margin: 20px;
+	margin: 10px;
 }
 
 
